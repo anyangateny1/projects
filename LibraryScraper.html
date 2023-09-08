@@ -3,6 +3,8 @@
 <html lang="en">
 
 <head>
+
+    <script src="javascript.js"></script>
     
     <title>
         LibCheck
@@ -11,8 +13,11 @@
 </head>
 
 <body>
-
-    <input id="searchbar" type="text" name = "search" placeholder="Please enter book title here...">
+    
+    <form name="search" action="~/websiteTest.py" method="get">
+    <input type="text" name ="searchBox">
+    <input type="submit" value="Submit">
+    </form>
 
     <h1>LibCheck - A tool that scourers the internet for the pesky books you can't find!</h1>
 
